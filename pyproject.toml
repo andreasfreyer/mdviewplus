@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdviewplus"
+version = "0.1.0"
+description = "Nativer Qt6-Markdown-Viewer mit Mermaid, Live-Reload und Offline-Rendering."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Andreas Freyer" }]
+keywords = ["markdown", "mermaid", "viewer", "qt", "pyqt6"]
+dependencies = [
+    "PyQt6>=6.6",
+    "PyQt6-WebEngine>=6.6",
+]
+
+[project.scripts]
+mdviewplus = "mdviewplus.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+# Gebündelte JS-Libs (markdown-it + mermaid) + Fenstericon muessen ins Wheel.
+mdviewplus = ["vendor/*.js", "mdviewplus.png"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

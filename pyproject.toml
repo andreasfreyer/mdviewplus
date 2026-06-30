@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mdviewplus"
-version = "0.1.0"
+version = "0.1.1"
 description = "Nativer Qt6-Markdown-Viewer mit Mermaid, Live-Reload und Offline-Rendering."
 readme = "README.md"
 requires-python = ">=3.10"

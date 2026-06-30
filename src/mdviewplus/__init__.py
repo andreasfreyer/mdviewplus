@@ -3,4 +3,4 @@
 Rendering: markdown-it + mermaid.js, gebündelt im Paket (kein Laufzeit-Download).
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"

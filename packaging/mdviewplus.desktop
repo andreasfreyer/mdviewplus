@@ -6,6 +6,6 @@ Comment=Markdown-Viewer mit Mermaid und Live-Reload
 Exec=mdviewplus %f
 Icon=mdviewplus
 Terminal=false
-Categories=Utility;TextTools;Development;
+Categories=Utility;
 MimeType=text/markdown;text/x-markdown;
 NoDisplay=false
